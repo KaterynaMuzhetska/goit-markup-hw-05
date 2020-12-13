@@ -503,6 +503,14 @@ img {
   fill: currentColor;
 }
 
+.networks .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--svg-icon-color);
+
+  transition: fill 250ms var(--anima-timing);
+}
+
 .clients-title {
   padding-top: 0;
   margin-bottom: 50px;
@@ -544,7 +552,8 @@ img {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 
-  transition: border-color 250ms var(--animation-timing);
+  transition: color 250ms var(--animation-timing),
+    border-color 250ms var(--animation-timing);
 }
 
 .clients-item:nth-child(6n) {
@@ -564,8 +573,6 @@ img {
 
 .clients-svg {
   fill: currentColor;
-
-  transition: fill 250ms var(--anima-timing);
 }
 
 footer {
@@ -641,6 +648,8 @@ footer {
   letter-spacing: 0.03em;
 
   color: var(--footer-text-color);
+
+  transition: color 250ms var(--animation-timing);
 }
 
 .container-join-us {
@@ -681,6 +690,9 @@ footer {
   color: var(--footer-accent);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: color 250ms var(--animation-timing),
+    background-color 250ms var(--animation-timing);
 }
 
 .footer-social-links:hover,
