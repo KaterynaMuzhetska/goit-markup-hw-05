@@ -498,17 +498,11 @@ img {
   outline: none;
 }
 
-.soc-links-svg,
-.soc-links-svg:hover {
-  fill: currentColor;
-}
-
 .networks .icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--svg-icon-color);
+  fill: var(--icon-color);
+  fill: currentColor;
 
-  transition: fill 250ms var(--anima-timing);
+  transition: fill 250ms var(--animating-timing);
 }
 
 .clients-title {
